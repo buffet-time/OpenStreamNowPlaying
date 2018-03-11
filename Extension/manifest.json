@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+  
+	"name": "Pandobs",
+	"description": "This extension pulls song data from pandora and outputs it into .txt files for usage in obs",
+	"version": "1.0",
+  
+	"browser_action": {
+	 "default_icon": "icon.png",
+	 "default_title": "PandOBS"
+	},
+	"content_scripts": [
+		{
+		  "matches": ["*://www.pandora.com/*"],
+		  "js": ["content.js"]
+		}
+		],
+	"permissions": [	
+	 ]
+  }
