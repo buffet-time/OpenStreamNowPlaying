@@ -10,11 +10,9 @@
 	 "default_title": "PandOBS"
 	},
 	"content_scripts": [
-		{
-		  "matches": ["*://www.pandora.com/*"],
-		  "js": ["content.js"]
-		}
-		],
-	"permissions": [	
-	 ]
+			{
+				"matches": ["*://www.pandora.com/*"],
+				"js": ["content.js"]
+			}
+		]
   }
